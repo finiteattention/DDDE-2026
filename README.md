@@ -6,32 +6,40 @@ https://2026.dddeurope.com/cfp/
 
 ## **TITLE**
 
-**Releasing and recapturing informational complexity: replacing a Word template with a digital tool for Data Protection Impact Assessment.**
+**Making a complex domain legible to users: replacing a Word template with a digital tool for Data Protection Impact Assessment.**
 
 
 ## **DESCRIPTION**
 
-How do you make risk assessment something users don't describe as "hellish"?
+How do you make risk assessment a process users don't describe as "hellish"?
 
-When the Norwegian Labour and Welfare Administration (Nav) asks for, receives and uses information about its citizens, it needs to comply with laws about handling personal private information correctly. Just a few examples of these requirements: whether the state has the right to ask for the information in the first place, where and how it stores the information, who has access to the information, and whether it is only used for the stated purpose.
+The Norwegian Labour and Welfare Administration (Nav) handles a lot of information about citizens. Nav must comply with several detailed sets of regulations, such as GDPR. It must also document that compliance on a large scale.
 
-Nav handles a lot of personal data. It's unreasonable to expect software development teams, facilities management, benefits offices etc, to each have the expertise required to understand and document compliance with many different laws and keep up with legislative changes. Previous work at Nav has resulted in a self-assessment compliance tool where our colleagues, as individuals or teams, work through Nav's "success criteria" for compliance. These are presented (and modelled) in a highly structured way, with requirements descriptions and success criteria being owned and kept updated in the tool by subject specialist "requirements owners".
+It's unreasonable to expect software development teams, facilities management, benefits offices etc, to each have the expertise required to understand and document compliance with many different laws, and to keep up with legislative changes. Previous work at Nav has resulted in a self-assessment compliance tool to help individuals or teams work through Nav's "success criteria" for compliance. These are presented (and modelled) in a highly structured way, with requirements descriptions and success criteria being owned and kept updated in the tool by subject specialist "requirements owners".
 
-Although the compliance tool does include basic privacy legislation, colleagues must also consider whether the way they handle personal data risks compromising citizens' privacy rights. The user may conclude that they need to complete a Data Protection Impact Assessment (DPIA). This assessment involves identifying areas of potential risk, then implementing and documenting measures designed to reduce risk levels.
+Where there is potential risk to citizens' privacy rights, teams may also need to complete a Data Protection Impact Assessment (DPIA). Until recently, DPIA in Nav was documented, reviewed and signed off on using a Microsoft Word template. Word as a format was challenging for users (many of whom are not familiar with DPIA or privacy legislation), for Nav's data privacy ombudsman who reviews DPIAs and returns them with feedback, and for risk owners in the organisation who need an up to date overview of their risk portfolio.
 
-Until recently, DPIA was documented using a Microsoft Word template. Nav's Data Privacy Ombudsman would then review the assessment, write their comments in the same Word document and send it back to the author. Here are some of the issues with that way of doing things:
+This talk will outline how Nav went from using Word for DPIA, to building integrated support for DPIA into the existing compliance tool. The talk will demo the tool itself (in production since September 2025) and touch on:
 
-* **Because the subject domain of DPIA is more complex and cross-linked than Word could accommodate, the true domain structure just wasn't legible for many users.** Domain complexity had to be managed instead through multiple tables, repetition and manual cross-referencing. This imposed an additional, extrinsic cognitive load on top of the already substantial intrinsic cognitive load of the subject domain. Essentially, using the Word template pushed a lot of the task's inherent complexity over to the user, per [Tesler's Law](https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity). Also, because of the way Word documents are shared, sent and archived within the organisation (for good reasons), it was largely impossible for authors to access other people's completed DPIAs and perhaps understand the domain better by seeing concrete examples. One of the most common words we heard from users was "uoversiktlig", which is a Norwegian word meaning roughly "impossible to get an overview of". 
+* What happens to the user experience, and domain knowledge, when a documentation tool (Word) is too simple for the domain being documented.
 
-* **Word is a static format that can't flex to accommodate user needs** Writing help text makes an already long document even longer, imposing additional cognitive load on all users, expert and novice. Progressive disclosure and other dynamic enhancements are not what Word was designed to do. Neither does it support dynamically inserting content from other systems: this meant a lot of manual copy/pasting for users, and the need to then maintain duplicate documentation. Word also offers limited (and obscure) functionality around reusing and linking to the same content within a single document. Filling out the DPIA template also required a lot of scrolling (another word we heard often when talking to users). These challenges all added to the extraneous cognitive load of completing a DPIA. Many of the pains were also felt by the Data Privacy Ombudsman, despite their domain expertise.
+* Cognitive load as a lens for thinking about user needs in documentation tools.
 
-* **Word traps data.** Nav's Ombudsman has to make an annual report with qualitative and quantitative statistics about DPIAs. The Ombudsman and their team built an impressive manual workflow in OneNote to manage the Word-based system, but manual logging was time-consuming and meant less time to review DPIAs. Another user group who couldn't easily extract important information was risk owners, who had to access and read entire DPIA documents to understand the risk profile, one document at a time. 
+* Using domain mapping and user feedback to decide how to integrate new functionality into an existing tool.
 
+* Designing for users to create and re-use their own content while retaining an overview of what is used where.
 
-### **(Some of) what we did** 
-I would like to say a little bit about each of these, but am very open to input if you would like to see more of one thing or less of another.
+* Practical design considerations when allowing users to complete regular compliance and DPIA documentation side by side. 
 
-* User research to understand where the old way of doing things hurt most. Our user groups include: everyday users documenting risk in their contexts, managers who then own those risks and want to understand what their risk portfolio looks like at any given time, the Data Privacy Ombudsman, and Navs own internal monitoring department. We tested frequently with users while we were in the design and build stages, and ran the new tool in private beta over the summer to get user feedback before going live. I can talk about testing, how we did it and what we found.
+* Designing to make it as hard as possible to produce a "bad" DPIA.
+
+* Integrating functionality for three distinct user groups, each with different requirements, into the same tool.
+
+* Harnessing user pains to prioritise feature development
+
+* Designing with data in mind from the beginning. 
+
+department. We tested frequently with users while we were in the design and build stages, and ran the new tool in private beta over the summer to get user feedback before going live. I can talk about testing, how we did it and what we found.
 
 * Domain-mapping. One of the main challenges at the start was how to integrate the DPIA data structure with our existing compliance tool to avoid the need to duplicate common content, and instead allow content sharing and re-use where relevant. I can show some canvases where we tried to make sense of the domains, and talk a little bit about system architecture. I can also show "before" and "after" maps of how many different systems people had to use to get a DPIA done. 
 

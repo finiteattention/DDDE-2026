@@ -1,15 +1,14 @@
 # DDDE-2026
 
-
 https://2026.dddeurope.com/cfp/
 
 
-## **TITLE**
+## TITLE
 
-**Making a complex domain legible to users: replacing a Word template with a digital tool for Data Protection Impact Assessment.**
+Making a complex domain legible: replacing a Word template with a digital tool for DPIA
 
 
-## **DESCRIPTION**
+## DESCRIPTION
 
 How do you make risk assessment a process users don't describe as "hellish"?
 
@@ -33,18 +32,23 @@ This talk will outline how Nav went from using Word for DPIA, to building integr
 
 * Designing with data in mind from the beginning. 
 
-* Harnessing user pains to prioritise feature development
+* Harnessing user pains to prioritise feature development.
 
 * Using cognitive load as a lens to guide design choices.
 
 
-**Please add any additional notes for the organisers (links you want to share, info you want us to know,...)**
+## Please add any additional notes for the organisers (links you want to share, info you want us to know,...)
 
 I presented at DDDE in 2024 (https://2024.dddeurope.com/program/modelling-the-law-turning-intent-into-code/) and would love to do so again if you'll have me. I wanted to be able to come back and tell you how the work my colleague and I showed last time is now in production … but things in government move more slowly. The presentation I'm proposing here is loosely similar, in that it's about making better documentation tools based on user requirements, only this time it's about documentation of compliance rather than of how we implement benefits law. It's also really nice to be able to talk about a product that's actually in production and where many internal stakeholders are actually competing to have us prioritise their preferred features (!)
 
-I'm attaching a couple of annotated screengrabs and a concept sketch to give an idea of what the tool looks like and just some of the design considerations that went into it. Of course when I present, I wouldn't show the annotations, but talk through the ideas instead.
-
 I'm very happy to discuss what you think might be the best way to present this content to fit in with the rest of the conference and any emerging themes that are coming out of other submissions. I'm pretty flexible and I have a lot of presenting experience; sometimes it's fun to be challenged to tell the story in a different way that I haven't thought of.
 
-Thank you for reading.
+I've uploaded a couple of annotated screengrabs and a concept sketch to GitHub, to give an idea of what the tool looks like and show just some of the design considerations that went into it. Of course when I present, I wouldn't show the annotations, but talk through the ideas instead.
 
+## Social media message 1
+
+Documentation doesn't have to be "scrolling hell" — there are other ways! Chris Atherton talks about designing a documentation tool fit for purpose.
+
+## Social media message 2
+
+If filling in long forms is getting you down, come and hear Chris Atherton's heartwarming story about making the documentation experience better.

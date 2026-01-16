@@ -43,7 +43,13 @@ I presented at DDDE in 2024 (https://2024.dddeurope.com/program/modelling-the-la
 
 I'm very happy to discuss what you think might be the best way to present this content to fit in with the rest of the conference and any emerging themes that are coming out of other submissions. I'm pretty flexible and I have a lot of presenting experience; sometimes it's fun to be challenged to tell the story in a different way that I haven't thought of.
 
-I've uploaded a couple of annotated screengrabs and a concept sketch to a GitHub repo for this submission, to give an idea of what the tool looks like and show just some of the design considerations that went into it. Of course when I present, I wouldn't show the annotations, but talk through the ideas instead. https://github.com/finiteattention/DDDE-2026/blob/168dffd0e950e7f4cbff08167f9a3c221e248760/Conference%20abstract%20etc.md
+I've uploaded a couple of annotated screengrabs and a concept sketch to a GitHub repo for this submission, to give an idea of what the tool looks like and show just some of the design considerations that went into it. Of course when I present, I wouldn't show the annotations, but talk through the ideas instead. 
+
+* DPIA overview screen: https://github.com/finiteattention/DDDE-2026/blob/3e72cb953676e1b2c10a6e966f9aa837060cdfe3/DPIA%20overview%20page%20DDDE.pdf
+
+* DPIA and regular compliance requirement screen: https://github.com/finiteattention/DDDE-2026/blob/3e72cb953676e1b2c10a6e966f9aa837060cdfe3/Requirement%20page%20DDDE.pdf
+
+* Concept sketch: https://github.com/finiteattention/DDDE-2026/blob/3e72cb953676e1b2c10a6e966f9aa837060cdfe3/Concept%20sketch%20DDDE.pdf
 
 ## Social media message 1
 
